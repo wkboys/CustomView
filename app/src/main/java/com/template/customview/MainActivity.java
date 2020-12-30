@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.chapter1, R.id.chapter2})
+    @OnClick({R.id.chapter1, R.id.chapter2, R.id.chapter3})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.chapter1:
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.chapter2:
                 startActivity(new Intent(MainActivity.this, Chapter2Activity.class));
+                break;
+            case R.id.chapter3:
+                startActivity(new Intent(MainActivity.this, Chapter3Activity.class));
                 break;
         }
     }
