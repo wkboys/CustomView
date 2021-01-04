@@ -11,5 +11,6 @@ public class Chapter5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter_e);
         setTitle("Chapter5Activity");
+
     }
 }
