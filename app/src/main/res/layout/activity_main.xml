@@ -42,4 +42,18 @@
         android:text="Chapter5"
         >
     </Button>
+    <Button
+        android:id="@+id/chapter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter6"
+        >
+    </Button>
+    <Button
+        android:id="@+id/chapter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter7"
+        >
+    </Button>
 </LinearLayout>

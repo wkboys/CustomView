@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.chapter1, R.id.chapter2, R.id.chapter3,R.id.chapter4,R.id.chapter5})
+    @OnClick({R.id.chapter1, R.id.chapter2, R.id.chapter3,R.id.chapter4,R.id.chapter5,R.id.chapter6,R.id.chapter7})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.chapter1:
@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.chapter5:
                 startActivity(new Intent(MainActivity.this, Chapter5Activity.class));
+                break;
+            case R.id.chapter6:
+                startActivity(new Intent(MainActivity.this, Chapter6Activity.class));
+                break;
+            case R.id.chapter7:
+                startActivity(new Intent(MainActivity.this, Chapter7Activity.class));
                 break;
         }
     }

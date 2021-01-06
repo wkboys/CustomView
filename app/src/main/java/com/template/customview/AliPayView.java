@@ -38,9 +38,9 @@ class AliPayView extends View {
         mCirclePath = new Path();
 
         mCirclePath.addCircle(mCentX,mCentY,mRadius,Path.Direction.CW);
-        mCirclePath.moveTo(mCentX-mRadius/2,mCentY);
-        mCirclePath.lineTo(mCentX,mCentY+mRadius/2);
-        mCirclePath.lineTo(mCentX+mRadius/2,mCentY-mRadius/3);
+        mCirclePath.moveTo(mCentX-mRadius / 2,mCentY);
+        mCirclePath.lineTo(mCentX,mCentY+mRadius / 2);
+        mCirclePath.lineTo(mCentX+mRadius / 2,mCentY-mRadius / 3);
 
         mPathMeasure = new PathMeasure(mCirclePath,false);
 
@@ -49,7 +49,7 @@ class AliPayView extends View {
 
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                mCurAnimValue = (Float) animator.getAnimatedValue();
+                mCurAnimValue = (Float) valueAnimator.getAnimatedValue();
                 invalidate();
             }
         });
@@ -62,8 +62,8 @@ class AliPayView extends View {
         super.onDraw(canvas);
 
         canvas.drawColor(Color.WHITE);
-        if (mCurAnimValue<1){
-           float stop= mPathMeasure.getLength()+mCurAnimValue;
+        if (mCurAnimValue < 1){
+           float stop= mPathMeasure.getLength() * mCurAnimValue;
            mPathMeasure.getSegment(0,stop,mDstPath,true);
         }else {
             if (!mNext){
