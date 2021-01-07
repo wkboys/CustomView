@@ -56,4 +56,39 @@
         android:text="Chapter7"
         >
     </Button>
+    <Button
+        android:id="@+id/chapter7a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter7(1)"
+        >
+    </Button>
+    <Button
+        android:id="@+id/chapter7b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter7(2)"
+        >
+    </Button>
+    <Button
+        android:id="@+id/chapter8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter8"
+        >
+    </Button>
+    <Button
+        android:id="@+id/chapter9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter9"
+        >
+    </Button>
+    <Button
+        android:id="@+id/chapter10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter10"
+        >
+    </Button>
 </LinearLayout>

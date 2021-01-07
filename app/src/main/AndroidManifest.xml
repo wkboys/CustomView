@@ -23,6 +23,11 @@
         <activity android:name=".Chapter5Activity"></activity>
         <activity android:name=".Chapter6Activity"></activity>
         <activity android:name=".Chapter7Activity"></activity>
+        <activity android:name=".Chapter7aActivity"></activity>
+        <activity android:name=".Chapter7bActivity"></activity>
+        <activity android:name=".Chapter8Activity"></activity>
+        <activity android:name=".Chapter9Activity"></activity>
+        <activity android:name=".Chapter10Activity"></activity>
     </application>
 
 </manifest>
