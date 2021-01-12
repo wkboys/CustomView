@@ -30,6 +30,17 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             />
-
+        <com.template.customview.InvertedImageView_SRCIN
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
     </LinearLayout>
+    <com.template.customview.EraserView_SRCOUT
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        />
+    <com.template.customview.RoundImageView_SRCIN
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

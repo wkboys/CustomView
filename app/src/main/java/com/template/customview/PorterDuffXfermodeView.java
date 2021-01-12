@@ -40,6 +40,7 @@ class PorterDuffXfermodeView extends View {
 
         int layoutId=canvas.saveLayer(0,0,getWidth(),getHeight(),null,Canvas.ALL_SAVE_FLAG);
         canvas.drawBitmap(dstBmp, 0,0 , mPaint);
+        //源图像 和目标图像混合
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.ADD));
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.LIGHTEN));
@@ -47,8 +48,19 @@ class PorterDuffXfermodeView extends View {
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.MULTIPLY));
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.OVERLAY));
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SCREEN));
+        //源图像模式
 //        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC));
-        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OVER));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
+        //目标图像模式
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OVER));
+//        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_ATOP));
+        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         canvas.drawBitmap(srcBmp, width / 2, height / 2, mPaint);
         mPaint.setXfermode(null);
         canvas.restoreToCount(layoutId);

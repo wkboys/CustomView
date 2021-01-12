@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <com.template.customview.BasisView
+    <Button
+        android:id="@+id/add_shape_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加圆角"/>
+
+    <TextView
+        android:id="@+id/shape_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shape标签实例"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_solid"
+        />
+    <com.template.customview.ShapeView
+        android:layout_width="250px"
+        android:layout_height="150px"
+        tools:ignore="MissingClass"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        >
+    </com.template.customview.ShapeView>
+    <com.template.customview.ShapeShaderView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:ignore="MissingClass"
+        android:layout_margin="10dp"
+        >
+    </com.template.customview.ShapeShaderView>
+</LinearLayout>

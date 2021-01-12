@@ -10,6 +10,6 @@ public class Chapter9Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter_i);
-        setTitle("Chapter1Activity");
+        setTitle("Chapter9Activity");
     }
 }

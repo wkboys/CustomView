@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="#ffffff"
+        android:scaleType="center"
+        >
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="欢迎光临，git"
+        android:textColor="#ff0000"
+        >
+
+    </TextView>
+    <com.template.customview.bitmap.LinearGradientView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        >
+    </com.template.customview.bitmap.LinearGradientView>
+    <com.template.customview.bitmap.StrokeImage
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cat"
+        android:scaleType="fitCenter"
+        android:padding="3dp"
+        android:clickable="true"
+        >
+    </com.template.customview.bitmap.StrokeImage>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:scaleType="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:scaleType="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>
