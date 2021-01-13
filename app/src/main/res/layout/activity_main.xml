@@ -138,5 +138,40 @@
             android:text="Chapter10(5)"
             >
         </Button>
+        <Button
+            android:id="@+id/chapter10f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter10(6)"
+            >
+        </Button>
+        <Button
+            android:id="@+id/chapter11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter11"
+            >
+        </Button>
+        <Button
+            android:id="@+id/chapter12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter12"
+            >
+        </Button>
+        <Button
+            android:id="@+id/chapter13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter13"
+            >
+        </Button>
+        <Button
+            android:id="@+id/chapter13a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter13(1)"
+            >
+        </Button>
     </LinearLayout>
 </ScrollView>

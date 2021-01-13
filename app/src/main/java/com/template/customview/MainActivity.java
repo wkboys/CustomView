@@ -1,6 +1,5 @@
 package com.template.customview;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.chapter1, R.id.chapter2, R.id.chapter3,R.id.chapter4,R.id.chapter5,R.id.chapter6,
             R.id.chapter7,R.id.chapter7a,R.id.chapter7b,R.id.chapter8,R.id.chapter9,R.id.chapter10,R.id.chapter8a
-            ,R.id.chapter10a,R.id.chapter10b,R.id.chapter10c,R.id.chapter10d,R.id.chapter10e})
+            ,R.id.chapter10a,R.id.chapter10b,R.id.chapter10c,R.id.chapter10d,R.id.chapter10e,R.id.chapter10f,R.id.chapter11,
+            R.id.chapter12,R.id.chapter13,R.id.chapter13a})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.chapter1:
@@ -85,6 +85,21 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.chapter10e:
                 startActivity(new Intent(MainActivity.this, Chapter10eActivity.class));
+                break;
+            case R.id.chapter10f:
+                startActivity(new Intent(MainActivity.this, Chapter10fActivity.class));
+                break;
+            case R.id.chapter11:
+                startActivity(new Intent(MainActivity.this, Chapter11Activity.class));
+                break;
+            case R.id.chapter12:
+                startActivity(new Intent(MainActivity.this, Chapter12Activity.class));
+                break;
+            case R.id.chapter13:
+                startActivity(new Intent(MainActivity.this, Chapter13Activity.class));
+                break;
+            case R.id.chapter13a:
+                startActivity(new Intent(MainActivity.this, Chapter13aActivity.class));
                 break;
         }
     }

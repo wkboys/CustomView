@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.template.customview.DoubleBufferingTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <com.template.customview.RectView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <com.template.customview.RectRefreshTextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+</LinearLayout>
